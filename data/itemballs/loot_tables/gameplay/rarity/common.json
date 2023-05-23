@@ -8,7 +8,6 @@
                 {
                     "type": "minecraft:item",
                     "name": "cobblemon:poke_ball",
-                    "weight": 10,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -22,7 +21,6 @@
                 {
                     "type": "minecraft:item",
                     "name": "cobblemon:exp_candy_s",
-                    "weight": 20,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -35,13 +33,11 @@
                 },
                 {
                     "type": "minecraft:item",
-                    "name": "cobblemon:exp_candy_m",
-                    "weight": 10
+                    "name": "cobblemon:exp_candy_m"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "name": "itemballs:gameplay/apricorn_seeds",
-                    "weight": 5
+                    "name": "itemballs:gameplay/apricorn_seeds"
                 }
             ]
         }
