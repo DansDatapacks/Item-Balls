@@ -1,4 +1,4 @@
-# runs as item ball marker after being summoned to be properly placed
+# place marker properly (runs as item ball marker)
 
 # find suitable ground
 function itemballs:utility/find_air_above_ground
@@ -7,10 +7,7 @@ function itemballs:utility/find_air_above_ground
 execute at @s run tp ~ ~-.7 ~
 
 # another pokeball item ball already here?
-execute if entity @e[type=minecraft:armor_stand,tag=itemballs.marker,tag=!itemballs.marker.init,distance=...5] run kill @s
+execute at @s if entity @e[type=minecraft:armor_stand,tag=itemballs.marker,tag=!itemballs.marker.init,distance=...5] run kill @s
 
-# if not, give ID
-execute unless entity @e[type=minecraft:armor_stand,tag=itemballs.marker,tag=!itemballs.marker.init,distance=...5] run function itemballs:utility/get_id
-
-# remove init tag
-tag @s remove itemballs.marker.init
+# randomly rotate
+execute at @s unless entity @e[type=minecraft:armor_stand,tag=itemballs.marker,tag=!itemballs.marker.init,distance=...5] run function itemballs:rotate_marker
