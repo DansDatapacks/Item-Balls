@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"example": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"entity": {
+					"type": "minecraft:wandering_trader",
+					"nbt": "{Tags:[\"itemballs.trigger\"]}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "itemballs:interact/left_click"
+	}
+}
