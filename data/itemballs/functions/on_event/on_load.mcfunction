@@ -2,6 +2,7 @@
 
 # init variables
 scoreboard objectives add itemballs.data dummy
+scoreboard objectives add itemballs.temp dummy
 scoreboard objectives add itemballs.id dummy
 
 # init loops
