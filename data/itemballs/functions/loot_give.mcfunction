@@ -8,6 +8,9 @@ execute if entity @s[tag=itemballs.rare] run loot give @p[tag=itemballs.opening_
 # play sound
 playsound cobblemon:poke_ball.open block @p[tag=itemballs.opening_item_ball] ~ ~ ~ 1 0.9
 
+# pickup sound
+playsound minecraft:entity.item.pickup player @p[tag=itemballs.opening_item_ball]
+
 # play particles
 particle minecraft:firework ~ ~1 ~ .01 .1 .01 .05 5
 
