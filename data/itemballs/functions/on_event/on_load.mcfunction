@@ -18,7 +18,17 @@ scoreboard players operation #itemballs:rng.value itemballs.temp = #itemballs:rn
 # constants
 scoreboard players set #10 itemballs.data 10
 
+# init spawn timer
+execute unless score #itemballs:spawn_timer itemballs.data matches 1.. run scoreboard players set #itemballs:spawn_timer itemballs.data 6000
+
+# pause loops
+schedule clear itemballs:loop/every_10_ticks
+schedule clear itemballs:loop/every_20_ticks
+schedule clear itemballs:loop/every_6000_ticks
+schedule clear itemballs:loop/every_spawn_timer_ticks
+
 # init loops
 function itemballs:loop/every_10_ticks
 function itemballs:loop/every_20_ticks
-function itemballs:loop/every_6000_ticks
+execute if score #itemballs:spawn_timer itemballs.data matches 6000 run function itemballs:loop/every_6000_ticks
+execute unless score #itemballs:spawn_timer itemballs.data matches 6000 run function itemballs:loop/every_spawn_timer_ticks
