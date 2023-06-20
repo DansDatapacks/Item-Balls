@@ -23,6 +23,8 @@
     </a>
 </p>
 
+<br/>
+
 <hr>
 
 <br/>
@@ -55,6 +57,8 @@ How to Install
 <p>
 You must put the downloaded .zip file in your world's "datapack" folder. (Singleplayer world folder, or Multiplayer world folder on Servers).
 </p>
+
+<br/>
 
 <hr>
 
