@@ -1,0 +1,28 @@
+[
+    {
+        "function": "minecraft:set_nbt",
+        "tag": "{CustomModelData:4150000,itemballs:{dowsing_machine:1},LodestoneDimension:\"minecraft:overworld\",LodestoneTracked:0b}"
+    },
+    {
+        "function": "minecraft:set_name",
+        "name": {
+            "text": "Dowsing Machine",
+            "color": "yellow",
+            "italic": false
+        }
+    },
+    {
+        "function": "minecraft:copy_nbt",
+        "source": {
+            "type": "minecraft:storage",
+            "source": "itemballs:dowsing.location"
+        },
+        "ops": [
+            {
+                "source": "Pos",
+                "target": "LodestonePos",
+                "op": "merge"
+            }
+        ]
+    }
+]

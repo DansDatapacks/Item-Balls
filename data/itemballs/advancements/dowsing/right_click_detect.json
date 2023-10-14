@@ -5,12 +5,12 @@
 			"conditions": {
 				"entity": {
 					"type": "minecraft:wandering_trader",
-					"nbt": "{Tags:[\"itemballs.trigger\"]}"
+					"nbt": "{Tags:[\"itemballs.dowsing.trigger\"]}"
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "itemballs:interact/right_click"
+		"function": "itemballs:interact/dowsing/right_click"
 	}
 }

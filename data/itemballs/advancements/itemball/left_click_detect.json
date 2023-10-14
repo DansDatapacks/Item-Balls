@@ -11,6 +11,6 @@
 		}
 	},
 	"rewards": {
-		"function": "itemballs:interact/left_click"
+		"function": "itemballs:interact/itemball/left_click"
 	}
 }

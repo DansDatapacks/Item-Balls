@@ -13,4 +13,4 @@ execute at @e[type=minecraft:marker,tag=itemballs.raycast.ray] positioned ~ ~.7 
 tag @s remove itemballs.opening_item_ball
 
 # reset trigger
-advancement revoke @s only itemballs:right_click_detect
+advancement revoke @s only itemballs:itemball/right_click_detect

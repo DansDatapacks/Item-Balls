@@ -1,0 +1,4 @@
+{
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomModelData:4150001,itemballs:{dowsing_machine:1}}"
+}
