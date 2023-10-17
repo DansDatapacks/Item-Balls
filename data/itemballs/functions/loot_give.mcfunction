@@ -15,7 +15,7 @@ playsound minecraft:entity.item.pickup player @p[tag=itemballs.opening_item_ball
 particle minecraft:firework ~ ~1 ~ .01 .1 .01 .05 5
 
 # kill trigger
-execute positioned ~ ~-.7 ~ run tp @e[type=minecraft:wandering_trader,tag=itemballs.trigger,distance=...5] ~ -1000 ~
+execute positioned ~ ~-.7 ~ as @e[type=minecraft:wandering_trader,tag=itemballs.trigger,distance=...5] run function itemballs:utility/remove_self
 
 # kill marker
 kill @s
